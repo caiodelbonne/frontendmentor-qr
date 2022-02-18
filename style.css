@@ -1,0 +1,67 @@
+body,
+h1,
+h2,
+p {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #d5e1ef;
+}
+.container {
+  display: grid;
+  grid-template-columns: minmax(200px, 400px) 500px minmax(200px, 400px);
+}
+.imagem-qr img {
+  border-radius: 20px;
+  margin-top: 10px;
+  width: 450px;
+}
+.imagem-qr {
+  text-align: center;
+  border-radius: 10px;
+  grid-column: 2;
+  background: #fff;
+}
+
+.descicao-paragrafo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  background: #fff;
+  grid-column: 2;
+  font-size: 16px;
+  max-width: 30ch;
+}
+.titulo {
+  font-size: 28px;
+  max-width: 25ch;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+/* iphone 12 pro */
+@media (max-width: 390px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 140px;
+  }
+  .imagem-qr {
+    width: 250px;
+    text-align: center;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .imagem-qr img {
+    width: 200px;
+  }
+  .descicao-paragrafo {
+    font-size: 16px;
+  }
+  .titulo {
+    font-size: 18px;
+    max-width: 20ch;
+  }
+}
